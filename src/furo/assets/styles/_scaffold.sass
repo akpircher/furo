@@ -47,6 +47,7 @@ body
 article
   color: var(--color-content-foreground)
   background: var(--color-content-background)
+  overflow-wrap: break-word
 
 .page
   display: flex
@@ -380,6 +381,12 @@ article
       label
         height: 100%
         width: 100%
+        user-select: none
+
+  .nav-overlay-icon .icon,
+  .theme-toggle svg
+    height: 1.25rem
+    width: 1.25rem
 
   // Add a scroll margin for the content
   :target
@@ -407,7 +414,7 @@ article
   .content
     padding: 0 $content-padding--small
     // Don't float sidebars to the right.
-  article div.sidebar
+  article aside.sidebar
     float: none
     width: 100%
     margin: 1rem 0

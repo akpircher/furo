@@ -2,17 +2,91 @@
 
 <!--
 
-Version codenames style: {adjective} {colorname}
+Version codenames style:
+
+date "+## %Y.%m.%d -- {adjective} {colorname}" | pbcopy
 
 https://patternbasedwriting.com/elementary_writing_success/list-4800-adjectives/
 https://en.wikipedia.org/wiki/Lists_of_colors
 
 -->
 
+## 2023.09.10 -- Zesty Zaffre
+
+- Make asset hash injection idempotent, fixing Sphinx 6 compatibility.
+- Fix the check for HTML builders, fixing non-HTML Read the Docs builds.
+
+## 2023.08.19 -- Xenolithic Xanadu
+
+- Fix missing search context with Sphinx 7.2, for dirhtml builds.
+- Drop support for Python 3.7.
+- Present configuration errors in a better format -- thanks @AA-Turner!
+- Bump `require_sphinx()` to Sphinx 6.0, in line with dependency changes in Unassuming Ultramarine.
+
+## 2023.08.17 -- Wonderous White
+
+- Fix compatiblity with Sphinx 7.2.0 and 7.2.1.
+
+## 2023.07.26 -- Vigilant Volt
+
+- Fix compatiblity with Sphinx 7.1.
+- Improve how content overflow is handled.
+- Improve how literal blocks containing inline code are handled.
+
+## 2023.05.20 -- Unassuming Ultramarine
+
+- ✨ Add support for Sphinx 7.
+- Drop support for Sphinx 5.
+- Improve the screen-reader label for sidebar collapse.
+- Make it easier to create derived themes from Furo.
+- Bump all JS dependencies (NodeJS and npm packages).
+
+## 2023.03.27 -- Tasty Tangerine
+
+- Regenerate with newer version of sphinx-theme-builder, to fix RECORD hashes.
+- Add missing class to Font Awesome examples
+
+## 2023.03.23 -- Sassy Saffron
+
+- Update Python version classifiers.
+- Increase the icon size in mobile header.
+- Increase admonition title bg opacity.
+- Change the default API background to transparent.
+- Transition the API background change.
+- Remove the "indent" of API entries which have a background.
+- Break long inline code literals.
+
+## 2022.12.07 -- Reverent Raspberry
+
+- ✨ Add support for Sphinx 6.
+- ✨ Improve footnote presentation with docutils 0.18+.
+- Drop support for Sphinx 4.
+- Improve documentation about what the edit button does.
+- Improve handling of empty-flexboxes for better print experience on Chrome.
+- Improve styling for inline signatures.
+- Replace the `meta` generator tag with a comment.
+- Tweak labels with icons to prevent users selecting icons as text on touch.
+
+## 2022.09.29 -- Quaint Quartz
+
+- Add ability to set arbitrary URLs for edit button.
+- Add support for aligning text in MyST-parser generated tables.
+
+## 2022.09.15 -- Pragmatic Pistachio
+
+- Add a minimum version constraint on pygments.
+- Add an explicit dependency on `sass`.
+- Change right sidebar title from "Contents" to "On this page".
+- Correctly position sidebars on small screens.
+- Correctly select only Furo's own `svg` in related pages `nav`.
+- Make numpy-style documentation headers consistent.
+- Retitle the reference section.
+- Update npm dependencies.
+
 ## 2022.06.21 -- Opulent Opal
 
-- Fix `docutils <= 0.17.x` compatibility
-- Bump to the latest Node.js LTS
+- Fix `docutils <= 0.17.x` compatibility.
+- Bump to the latest Node.js LTS.
 
 ## 2022.06.04.1 -- Naughty Nickel bugfix
 
